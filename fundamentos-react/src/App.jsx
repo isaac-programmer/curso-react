@@ -29,6 +29,10 @@ export default function App() {
                     <Aleatorio valorMin={10} valorMax={20} />
                     <Aleatorio valorMin={10} valorMax={20} />
                 </Card>
+
+                <Card titulo="#05 - Componente com Filhos" color="#D907B6">
+                    <Familia />
+                </Card>
             </div>            
         </div>
     );
