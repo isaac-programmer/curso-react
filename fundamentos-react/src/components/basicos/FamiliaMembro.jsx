@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function FamiliaMembro(props) {
+export default function FamiliaMembro({nome, sobrenome}) {
 
-    return <span>Membro da Família</span>
+    return <p><span>{nome}</span><strong>{sobrenome}</strong></p>
 
 }

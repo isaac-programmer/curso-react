@@ -4,7 +4,10 @@ import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from './components/basicos/Fragmento';
 import Aleatorio from './components/basicos/Aleatorio';
 import Card from './components/layout/Card';
+import Familia from './components/basicos/Familia';
+import FamiliaMembro from './components/basicos/FamiliaMembro';
 import "./app.css";
+import ListaAlunos from './components/repeticao/ListaAlunos';
 
 export default function App() {
     return (
@@ -31,7 +34,15 @@ export default function App() {
                 </Card>
 
                 <Card titulo="#05 - Componente com Filhos" color="#D907B6">
-                    <Familia />
+                    <Familia sobrenome="Daniel">
+                        <FamiliaMembro nome="Isaac" />
+                        <FamiliaMembro nome="Isaac" />
+                        <FamiliaMembro nome="Isaac" />
+                    </Familia>
+                </Card>
+
+                <Card titulo="#06 - Repetição" color="#D907B6">
+                    <ListaAlunos />
                 </Card>
             </div>            
         </div>
