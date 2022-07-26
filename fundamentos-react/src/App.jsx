@@ -9,6 +9,8 @@ import FamiliaMembro from './components/basicos/FamiliaMembro';
 import "./app.css";
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
+import ParOuImpar from './components/condicional/ParOuImpar';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
 
 export default function App() {
     return (
@@ -24,11 +26,11 @@ export default function App() {
                         subtitulo="Muito Legal!"
                     />
                 </Card>
-                
+
                 <Card titulo="#03 - Fragmento" color="#4641D9">
                     <Fragmento />
                 </Card>
-                
+
                 <Card titulo="#04 - Desafio Aleatório" color="#D907B6">
                     <Aleatorio valorMin={10} valorMax={20} />
                     <Aleatorio valorMin={10} valorMax={20} />
@@ -49,7 +51,12 @@ export default function App() {
                 <Card titulo="#07 - Desafio Repetição" color="#D907B6">
                     <TabelaProdutos />
                 </Card>
-            </div>            
+
+                <Card titulo="#08 - Renderização Condicional" color="#D907B6">
+                    <ParOuImpar numero={2} />
+                    <UsuarioInfo usuario={{ nome: "Fernando" }} />
+                </Card>
+            </div>
         </div>
     );
 }
